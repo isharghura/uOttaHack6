@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const lat = 45.424159;
-const long = -75.686951;;
+const long = -75.686951;
 const radius = 5;
 const token = process.env.api_key;
 

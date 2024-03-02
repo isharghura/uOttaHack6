@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles.css";
 import Navbar from "./Navbar"
+import { getLocation } from './js/location.js';
 
 // // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -30,6 +31,8 @@ import Navbar from "./Navbar"
 // const [user] = useAuthState(auth);
 
 function App() {
+  const locationResult = getLocation();
+  console.log("Result: " + locationResult);
   return <Navbar />
 }
 

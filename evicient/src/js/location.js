@@ -5,7 +5,7 @@ function getLocation() {
             var longitude = position.coords.longitude;
             var coordinatesElement = document.getElementById("coordinates");
             coordinatesElement.textContent = "Latitude: " + latitude + ", Longitude " + longitude;
-            sendLocationToServer(latitude, longitude);
+            console.log(latitude + ", " + longitude);
         }, function (error) {
             console.error("Error getting location:", error.message);
         });
@@ -15,24 +15,4 @@ function getLocation() {
     }
 }
 
-function sendLocationToServer(latitude, longitude) {
-    var url = 'http://localhost:3000';
-    var data = {
-        latitude: latitude,
-        longitude: longitude
-    };
-    fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data)
-    })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Server response:', data);
-        })
-        .catch(error => {
-            console.error('Error sending location to server:', error);
-        });
-}
+export { getLocation };
