@@ -7,7 +7,7 @@
 body {
     height: 100%;
     width: 100%;
-    background: linear-gradient(#2C3968, #5771CE);
+    background: linear-gradient(#2C3968, #5E7BE1);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -16,7 +16,7 @@ body {
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 2rem;
     padding: 0 1 rem;
 }
@@ -38,8 +38,17 @@ body {
     text-decoration: none;
     height: 100%;
     display: flex;
+    align-items: center;
+    padding-top: 2rem;
 }
 
-.nav li:hover {
+#anchor {
+    padding-right: 2rem;
+}
+
+#main-anchor {
+    padding-left: 4rem;
+}
+.nav li:hover, .site-title:hover {
     opacity: 50%;
 }

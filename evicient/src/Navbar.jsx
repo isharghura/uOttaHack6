@@ -1,10 +1,10 @@
 export default function Navbar() {
     return (
     <nav className= "nav">
-        <a href = "/" className="site-title"> evicient</a>
+        <a id = "main-anchor" href = "/" className="site-title"> evicient</a>
         <ul>
             <li>
-                <a href="/login">login</a>
+                <a id = "anchor" href="/login">login</a>
             </li>
         </ul>
     </nav>
