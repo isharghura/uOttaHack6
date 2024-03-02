@@ -1,7 +1,6 @@
 * {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
 }
 
@@ -11,4 +10,36 @@ body {
     background: linear-gradient(#2C3968, #5771CE);
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1 rem;
+}
+
+.site-title {
+    font-size: 2rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+}
+
+.nav li:hover {
+    opacity: 50%;
 }

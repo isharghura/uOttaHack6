@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles.css";
+import Navbar from "./Navbar"
 
 // // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -29,7 +30,7 @@ import "./styles.css";
 // const [user] = useAuthState(auth);
 
 function App() {
-  return 'HI';
+  return <Navbar />
 }
 
 export default App;
