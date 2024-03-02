@@ -47,7 +47,9 @@ function App() {
   return (
     <>
       <Navbar />
-      {component}
+      <div class = "container">
+        {component}
+      </div>
     </>
   );
 }
