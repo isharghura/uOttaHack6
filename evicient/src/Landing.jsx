@@ -7,7 +7,7 @@ export default function Landing () {
         margin: 0,
         height: '100%',
         width: '100%',
-        background: 'linear-gradient(#2C3968, #5771CE)',
+
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
         display: 'grid',
@@ -17,7 +17,7 @@ export default function Landing () {
           "info"`,
         gridGap: '20px',
         justifyItems: 'center',
-        maxWidth: '600px',
+        maxWidth: '100%',
         color: 'white',
         justifyContent: 'center',
         alignItems: 'center'
