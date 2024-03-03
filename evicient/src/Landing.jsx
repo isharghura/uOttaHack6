@@ -26,7 +26,7 @@ export default function Landing () {
           gridArea: 'title',
           fontSize: '2em',
           alignSelf: 'center'
-        }}>Title</div>
+        }}></div>
         <div style={{
           gridArea: 'battery',
           width: '100%',
